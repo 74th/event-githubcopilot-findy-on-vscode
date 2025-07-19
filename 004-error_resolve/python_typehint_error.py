@@ -27,3 +27,6 @@ def main():
         print(f"Area: {city_info['area']} km²")
         print(f"Country: {city_info['country']}")
         print()
+
+if __name__ == "__main__":
+    main()
