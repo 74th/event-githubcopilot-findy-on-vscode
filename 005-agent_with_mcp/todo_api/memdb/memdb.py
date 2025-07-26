@@ -24,14 +24,14 @@ class MemDB:
     def add(self, task: Task) -> int:
         task["id"] = len(self._tasks)
         self._tasks.append(copy(task))
-        assert task["id"]
+        assert task["id"] is not None
         return task["id"]
 
     def search_unfinished(self) -> list[Task]:
         return [copy(task) for task in self._tasks if not task["done"]]
 
     def update(self, task:Task):
-        assert task["id"]
+        assert task["id"] is not None
         self._tasks[task["id"]] = copy(task)
 
     def get(self, id: int) -> Optional[Task]:
