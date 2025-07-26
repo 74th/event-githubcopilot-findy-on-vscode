@@ -32,4 +32,8 @@ cd todo_frontend && npm start
 
 テストまでやり遂げるように頑張るようになる。
 
-##
+## ブラウザを使って情報を与える
+
+コマンド "Simple Borser: Show" を使用して、`http://localhost:3000` を開く。
+
+タスクの入力欄を指示して、横幅を広げるように指示する。
