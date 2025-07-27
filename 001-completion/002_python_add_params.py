@@ -1,3 +1,5 @@
+from typing import TypedDict
+
 class InputParams(TypedDict):
     """
     Input parameters for the function.
