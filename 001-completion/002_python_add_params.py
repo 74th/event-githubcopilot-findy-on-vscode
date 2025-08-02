@@ -1,8 +1,9 @@
 from typing import TypedDict
+import json
 
 class InputParams(TypedDict):
     """
-    Input parameters for the function.
+    入力パラメータ
     """
     year: int
     month: int
