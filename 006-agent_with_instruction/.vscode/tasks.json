@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "run flask",
+            "command": ["uv", "run", "python", "-m", "todo_api.server.api"],
+            "type": "shell",
+            "args": [],
+            "problemMatcher": [ ],
+            "presentation": { },
+            "group": "none"
+        },
+        {
+            "label": "run react dev",
+            "command": ["npm", "start"],
+            "type": "shell",
+            "args": [],
+            "problemMatcher": [],
+            "options": {
+                "cwd": "${workspaceFolder}/todo_frontend"
+            },
+            "presentation": { },
+            "group": "none"
+        }
+    ]
+}
